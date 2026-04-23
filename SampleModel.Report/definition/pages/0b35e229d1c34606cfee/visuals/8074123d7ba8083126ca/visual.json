@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "8074123d7ba8083126ca",
+  "position": {
+    "x": 10,
+    "y": 0,
+    "z": 0,
+    "height": 280,
+    "width": 280,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pieChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MarvelFact"
+                    }
+                  },
+                  "Property": "AlignmentID"
+                }
+              },
+              "queryRef": "MarvelFact.AlignmentID",
+              "nativeQueryRef": "AlignmentID",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "301479f6e840d83dd8f3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "MarvelFact"
+              }
+            },
+            "Property": "AlignmentID"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
